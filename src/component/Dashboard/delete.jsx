@@ -32,7 +32,7 @@ const DeleteBook = ({ open, setOpen, bookTitle, onDelete }) => {
                                     </DialogTitle>
                                     <div className="mt-2">
                                         <p className="text-sm text-gray-500">
-                                            Are you sure you want to delete the book titled <strong>{bookTitle}</strong>? 
+                                            Are you sure you want to delete the book titled <strong>{bookTitle?.title}</strong>? 
                                             This action cannot be undone.
                                         </p>
                                     </div>

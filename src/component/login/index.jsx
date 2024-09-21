@@ -3,6 +3,8 @@ import * as Yup from 'yup';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { Link, useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { fetchUserByToken } from "../../redux/slices/AuthSlice";
 
 const Index = () => {
     const initialValues = {
@@ -10,7 +12,7 @@ const Index = () => {
         password: '',
     };
     const navigate = useNavigate();
-
+    const dispatch = useDispatch();
     const validationSchema = Yup.object({
         email: Yup.string().email('Invalid email format').required('Email is required'),
         password: Yup.string().min(6, 'Password must be at least 6 characters').required('Password is required'),
@@ -22,7 +24,8 @@ const Index = () => {
             if (response?.data?.isSuccess) {
                 localStorage.setItem('token', response?.data?.data?.token);
                 localStorage.setItem('user_type', response?.data?.data?.user?.user_type);
-
+                localStorage.setItem('user', JSON.stringify(response?.data?.data?.user));
+                dispatch(fetchUserByToken());
                 if (response?.data?.data?.user?.user_type == 2) {
                     navigate('/');
                 } else {
