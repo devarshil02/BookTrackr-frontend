@@ -1,7 +1,7 @@
 import { Navigate, Outlet, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchUserByToken, loginhandle } from "../../redux/slices/AuthSlice"; 
+import { fetchUserByToken, loginhandle } from "../../Redux/slices/authSlice"; 
 import { toast } from "react-toastify";
 
 const PrivateRoutes = () => {

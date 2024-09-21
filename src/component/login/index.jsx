@@ -4,7 +4,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { fetchUserByToken } from "../../redux/slices/AuthSlice";
+import { fetchUserByToken } from "../../Redux/slices/authSlice";
 
 const Index = () => {
     const initialValues = {
