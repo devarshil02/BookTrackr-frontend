@@ -5,7 +5,7 @@ const initialState = {
   userInfo: null,
   isAuthenticated: false,
   status: 'idle',
-  error: null,
+  error: null, 
 };
 
 
