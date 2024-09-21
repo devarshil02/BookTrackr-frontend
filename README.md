@@ -1,8 +1,42 @@
-# React + Vite
+# BookTrackr
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BookTrackr is a full-stack application that allows users to manage a list of books. The application is built using React with Vite for the frontend.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add new books to the list.
+- Edit existing book details.
+- Delete books from the list.
+- View the list of all books.
+- Responsive and user-friendly interface.
+
+## Technologies
+
+- **Frontend**: React, Vite
+- **Backend**: (To be specified, e.g., Node.js, Express)
+- **Database**: (To be specified, e.g., MongoDB)
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- npm (comes with Node.js)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/booktrackr.git
+
+2. Install the node module
+
+   npm install
+
+3. start the project
+
+   npm run dev      
+
